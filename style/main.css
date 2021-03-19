@@ -1,0 +1,107 @@
+:root { /* define variáveis no css */
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* { /* reset css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* limita os elementos à borda da caixa */
+}
+
+/*Elementos base */
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex; /* alinha os elementos em linha */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* separa o h2 do nav */
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px; 
+}
+
+header nav a {
+    text-decoration: none; /* remove as linhas abaixo das palavras */
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Filme principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/poster.jpg'); /*linear-gradient cria um gradiente de cores*/
+
+    height: 400px;
+    background-size: cover; /* ajusta a imagem à área de cobertura da caixa */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /*Elementos começam da esquerda*/
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50); /*verde, vermelho, azul, camada alpha (.50 = 50%)*/
+    border: none; /* tira a borda padrão */
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /* indica que é clicável mudando o cursor */
+    transition: .3s ease all; /*transição entre animações*/
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme { /* configura as imagens do carrossel */
+  height: 100%;
+  width: 100%;
+  display: block;  
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+}
