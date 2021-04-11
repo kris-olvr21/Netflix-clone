@@ -1,5 +1,5 @@
-# Netflix-clone
-🍿 Clone of Netflix navigation screen 
+# Netflix-clone 🍿
+Clone of Netflix navigation screen 
 
 • Technologies used:
 <br>HTML
